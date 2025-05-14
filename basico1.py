@@ -23,7 +23,9 @@ texto = tk.Text(ventana)
 texto.config(background="tan1",font=("Calibri",14),foreground="DarkOliveGreen4",cursor="pencil",width=25,height=10)
 texto.pack()
 
+
+
 ventana.mainloop()
 
-# ME QUEDE EN 1 HORA.
+
 
