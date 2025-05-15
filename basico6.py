@@ -4,6 +4,8 @@ import tkinter as tk
 ventana = tk.Tk()
 ventana.title("Python: Interfaces graficas")
 ventana.geometry("500x500")
+ventana.minsize(400,400)
+ventana.maxsize(600,600)
 
 elemento_1 = tk.Label(ventana,text="Elemento 1",bg="gold")
 elemento_2 = tk.Label(ventana,text="Elemento 2",bg="lightblue")
@@ -21,10 +23,10 @@ ventana.rowconfigure(0,weight=1)
 ventana.rowconfigure(1,weight=2)
 ventana.rowconfigure(2,weight=1)
 
-ventana.columnconfigure(0,weight=1)
+ventana.columnconfigure(0,weight=1,minsize=100,pad=200)
 ventana.columnconfigure(1,weight=1)
 ventana.columnconfigure(2,weight=2)
 
-ventana.mainloop()
+ventana.grid_anchor("center")
 
-# 3 HORAS 1 MINUTO.
+ventana.mainloop()
